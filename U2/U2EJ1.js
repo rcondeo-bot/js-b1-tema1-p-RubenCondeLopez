@@ -30,7 +30,14 @@ for(let i=0; i<10;i++){
 }
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function fibonacci(number) {
+	if(number < 2) {
+		return number;
+	}
+	else {
+		return fibonacci(number - 1) + fibonacci(number - 2)
+	}
+}
 
 
 

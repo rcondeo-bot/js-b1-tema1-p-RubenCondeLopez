@@ -68,7 +68,11 @@ let planets = [
         }
     ] 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+// Arrow function que recibe un planeta y devuelve [nombre, diámetro]
+const planetDiameter = (planet) => [planet.name, planet.diameter];
 
+// Usamos map para generar el array multidimensional
+const result = planets.map(planet => planetDiameter(planet));
 
 
 

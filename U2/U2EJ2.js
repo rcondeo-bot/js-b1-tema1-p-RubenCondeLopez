@@ -16,7 +16,14 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function rangeOfNumbers(number) {
+	let j = 0
 
+	for(let i = 0; i <= number; i++){
+		j = j + i
+	}
+	return j
+}
 
 
 /**

@@ -23,6 +23,15 @@
 console.log(hypotenuse(3,4));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function hypotenuse(a, b) {
+    // Función auxiliar para calcular el cuadrado
+    function square(x) {
+        return x * x;
+    }
+
+    let c = Math.sqrt(square(a) + square(b));
+    return c;
+}
 
 
 

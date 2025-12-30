@@ -66,7 +66,11 @@ let planets = [
         }
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+// Arrow function que devuelve true si el planeta tiene anillos
+const planetHasRings = (planet) => planet.hasRings;
 
+// Usamos filter para quedarnos solo con los planetas con anillos
+const result = planets.filter(planet => planetHasRings(planet));
 
 
 

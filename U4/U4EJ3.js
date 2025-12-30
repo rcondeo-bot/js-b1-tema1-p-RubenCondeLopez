@@ -54,7 +54,20 @@ console.log(oldest(classroomStudents[0], classroomStudents[3])); //This will ret
 console.log(oldest(classroomStudents[2], classroomStudents[3], classroomStudents[4])); //This will return 'Ramon'
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function oldest(...students) {
+  let myArray = new Array(students.length);
 
+  for (let i = 0; i < students.length; i++) {
+    myArray[i] = {
+      name: students[i].name,
+      yearOfBirth: students[i].yearOfBirth
+    };
+  }
+
+  myArray.sort((a, b) => a.yearOfBirth - b.yearOfBirth);
+
+  return myArray[0].name;
+}
 
 
 

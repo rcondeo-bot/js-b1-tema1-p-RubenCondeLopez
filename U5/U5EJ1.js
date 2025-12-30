@@ -60,7 +60,14 @@ const classroomStudents = [
 ];
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+// Arrow function que devuelve la letra de la nota
+const letterGrade = (grade) => 
+    grade >= 9 ? 'A' :
+    grade >= 7 ? 'B' :
+    grade >= 3 ? 'C' : 'D';
 
+// Usamos map sobre classroomStudents para obtener un array de letras
+const result = classroomStudents.map(student => letterGrade(student.averageGrade));
 
 
 

@@ -60,7 +60,14 @@ const classroomStudents = [
 console.log(totalApproved(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
+function totalApproved(myArray) {
+  function isApproved(student) {
+    return student.averageGrade >= 5;
+  }
+  
+  const estudianteAprobado = myArray.filter(isApproved);
+  return estudianteAprobado.length;
+}
 
 
 
